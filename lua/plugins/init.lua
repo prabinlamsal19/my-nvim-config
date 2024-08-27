@@ -10,15 +10,15 @@ return {
       -- require "configs.ts_error_translator"
     end,
   },
-  {
-    "m4xshen/hardtime.nvim",
-    event = "VeryLazy",
-    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-    config = function()
-      require("hardtime").setup {}
-    end,
-    opts = {},
-  },
+  -- {
+  --   "m4xshen/hardtime.nvim",
+  --   event = "VeryLazy",
+  --   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+  --   config = function()
+  --     require("hardtime").setup {}
+  --   end,
+  --   opts = {},
+  -- },
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- format on save
@@ -272,14 +272,14 @@ return {
       },
     },
     keys = {
-      {
-        "s",
-        mode = { "n", "x", "o" },
-        function()
-          require("flash").jump()
-        end,
-        desc = "Flash",
-      },
+      -- {
+      --   "s",
+      --   mode = { "n", "x", "o" },
+      --   function()
+      --     require("flash").jump()
+      --   end,
+      --   desc = "Flash",
+      -- },
       {
         "S",
         mode = { "n", "x", "o" },
